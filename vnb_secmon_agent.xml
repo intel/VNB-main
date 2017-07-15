@@ -1,0 +1,11 @@
+<manifest>
+  <remote name="bitbucket"
+    fetch= "https://rajdroid@bitbucket.org/datasecuritygroup/" />
+  <default sync-j="1" 
+    remote="bitbucket" revision="master"/>
+
+  <project name="vnb-secmon-config" remote="bitbucket" revision="refs/heads/master" />
+  <project name="vnb-secmon-broker" remote="bitbucket" revision="refs/heads/master" />
+  <project name="vnb-ipsec-config" remote="bitbucket" revision="refs/heads/master" />
+</manifest>
+

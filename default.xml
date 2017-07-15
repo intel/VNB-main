@@ -1,0 +1,8 @@
+<manifest>
+  <remote name="bitbucket"
+    fetch= "https://rajdroid@bitbucket.org/datasecuritygroup/" />
+  <default sync-j="1" 
+    remote="bitbucket" revision="master"/>
+
+  <project name="vnb-main" remote="bitbucket" revision="refs/heads/master" />
+</manifest>
