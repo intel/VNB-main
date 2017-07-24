@@ -17,6 +17,7 @@ function fetch_secmon_ems() {
 function install_run_secmonems() {
   cd $current_dir
   cd SecMon_EMS/installer/
+  chmod +x ./install.sh
   ./install.sh
 }
 
