@@ -1,8 +1,8 @@
 <manifest>
-  <remote name="bitbucket"
-    fetch= "https://rajdroid@bitbucket.org/datasecuritygroup/" />
+  <remote name="github"
+	  fetch= "https://github.com/intel/" />
   <default sync-j="1" 
-    remote="bitbucket" revision="master"/>
+    remote="github" revision="master"/>
 
-  <project name="vnb-main" remote="bitbucket" revision="refs/heads/master" />
+  <project name="vnb-main" remote="github" revision="refs/heads/master" />
 </manifest>
