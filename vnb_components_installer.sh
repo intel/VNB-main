@@ -5,7 +5,7 @@ current_dir=`pwd`
 # Fetch VNB SecMon EMS code from Github repo
 function fetch_secmon_ems() {
   cd $current_dir
-  repo init -u https://rajdroid@bitbucket.org/datasecuritygroup/vnb-main.git -m vnb_secmon_ems.xml
+  repo init -u https://github.com/intel/vnb-main.git -m vnb_secmon_ems.xml
   repo sync --force-sync
   cp -r vnb-secmon-config/SecMon_EMS/ .
   cp -r vnb-common-utils/rbac ./SecMon_EMS
@@ -24,7 +24,7 @@ function install_run_secmonems() {
 # Fetch VNB IPSec EMS code from Github repo
 function fetch_ipsec_ems() {
   cd $current_dir
-  repo init -u https://rajdroid@bitbucket.org/datasecuritygroup/vnb-main.git -m  vnb_ipsec_ems.xml
+  repo init -u https://github.com/intel/vnb-main.git -m  vnb_ipsec_ems.xml
   repo sync --force-sync
   cp -r vnb-ipsec-config/IPSec_EMS .
   cp -r vnb-common-utils/rbac ./IPSec_EMS
@@ -43,7 +43,7 @@ function install_run_ipsecems() {
 # Fetch IPSec Enforcer code from Github
 function fetch_enforcer() {
   cd $current_dir
-  repo init -u https://rajdroid@bitbucket.org/datasecuritygroup/vnb-main.git -m vnb_enforcer_peer.xml
+  repo init -u https://github.com/intel/vnb-main.git -m vnb_enforcer_peer.xml
   repo sync --force-sync
   
   mv vnb-ipsec-config/IPSec_Enforcer .
@@ -62,7 +62,7 @@ function install_run_ipsecenforcer() {
 # Fetch SecMon Agent code from Github repo
 function fetch_secmon() {
   cd $current_dir
-  repo init -u https://rajdroid@bitbucket.org/datasecuritygroup/vnb-main.git -m vnb_secmon_agent.xml
+  repo init -u https://github.com/intel/vnb-main.git -m vnb_secmon_agent.xml
   repo sync --force-sync
 
   cp -r vnb-secmon-config/SecMon_Agent .
