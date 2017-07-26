@@ -16,3 +16,17 @@ Documentation for whole Architecture is also present inside this repo. Each docu
 
 A installation script is `vnb_components_installer.sh` present in this repo which fetch and install each components. 
 It takes single argument asking which components to install [secmon_ems | ipsec_ems | ipsec_enforcer_peer | secmon_agent].
+
+Project is divided among following repositories which are listed below:
+
++ **https://github.com/intel/vnb-main**
+	Contains documentation and project components install script.
++ **https://github.com/intel/vnb-secmon-config**
+	Contains VNB SecMon EMS and VNB SecMon Agent source code and installation script.
++ **https://github.com/intel/vnb-secmon-broker**
+	Contains VNB SecMon Plugins(Rawforward and Netflow) source code. 
++ **https://github.com/intel/vnb-common-utils**
+	Contains RBAC (Role based Access control) source code which is used by VNB IPSec EMS.
++ **https://github.com/intel/vnb-ipsec-config**
+	Contains VNB IPSec EMS and VNB IPSec Enforcer source code which handle IPsec tunnel configurations between Machines.
+	
